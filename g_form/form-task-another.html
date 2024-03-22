@@ -3,29 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://rs.nxfs.nexon.com/common/images/nexon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://rs.nxfs.nexon.com/common/images/nexon.ico">
     <title>넥슨 회원로그인</title>
 </head>
 <body>
-    <div>
-        <h1>NEXON</h1>
-        <button type="button">넥슨 ID 로그인</button>
-        <button type="button">일회용 로그인</button>
-        <button type="button">QR 로그인</button>
+    <div id ='wrapper' style="position:absolute; margin-left:765px">
+        <div class="header">
+            <h1 class="logo" style="margin-left: 90px;">
+                <a href="https://www.nexon.com/Home/Game">
+                    <span>NEXON</span>
+                </a>
+            </h1>
+            <div class="tab">
+                <ul>
+                    <li style="display:inline-block"><button type="button">넥슨 ID 로그인</button></li>
+                    <link rel="shortcut icon" href="https://member.nexon.com/join/join.aspx?accesscode=1&redirect=https%3A//www.nexon.com/Home/Game">
+                    <li style="display:inline-block"><button type="button">일회용 로그인</button></li>
+                    <li style="display:inline-block"><button type="button">QR 로그인</button></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="loginSec">
+                <div class="nexonLogin">
+                    <fieldset>
+                        <!--<legend class="acchidden">넥슨 ID 로그인</legend>-->
+                        <div class="id"> 
+                            <input type="text" placeholder="넥슨 ID (아이디 또는 이메일)">
+                        </div>
+                        <div class="pass">
+                            <input type="text" placeholder="비밀번호">
+                        </div>
+                        <div class="saveid">
+                            <label><input type="checkbox">로그인 상태 유지</label>
+                        </div>
+                        <div class="btLogin">
+                            <button type="button">넥슨 ID로그인</button>
+                        </div>
+                    </fieldset>
+                </div>                
+                <p class="loginMenu"></p>
+                    <a href="#">회원가입</a>
+                    <a href="#">넥슨ID 찾기</a>
+                    <a href="#">비밀번호 찾기</a>            
+                    <a href="https://security.nexon.com"><img src="security-image.png" width="20px">보안센터</a>
+                <div class="tpa" style="margin-top: 30px;">
+                    <button type="button" style="display:block; margin-bottom:6px">
+                        <img src="facebook-image.png" width="25px">
+                        <span>Facebook 계정으로 로그인</span>
+                    </button>
+                    <button type="button" style="display:block; margin-bottom:6px">
+                        <img src="google-image.png" width="25px">
+                        <span>Google 계정으로 로그인</span>
+                    </button>
+                    <button type="button" style="display:block; margin-bottom:6px">
+                        <img src="naver-image.png" width="25px">
+                        <span>Naver 계정으로 로그인</span>
+                    </button>
+                    <button type="button" style="display:block">
+                        <img src="apple-image.png" width="25px">
+                        <span>Apple 계정으로 로그인</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer" style="margin-top: 120px;">
+            <p>NEXON Korea Corporation All Right Reserved</p>
+        </div>
     </div>
-    <div style="margin-top: 45;">
-        <div>
-            <input type="text" name="" id="" placeholder="넥슨ID(아이디 또는 이메일)">
-        </div>
-        <div>
-            <input type="text" name="" id="" placeholder="비밀번호">
-        </div>
-        <label>
-            <input type="checkbox" name="" value=""> 로그인 상태 유지
-        </label>
-        <div>
-            <button type="button">넥슨ID 로그인</button>    
-        </div>
-    </div>
+    
 </body>
 </html>
